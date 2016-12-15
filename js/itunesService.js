@@ -20,6 +20,7 @@ angular.module('itunes').service('itunesService', function($http, $q){
           var obj = {
             AlbumArt: val.artworkUrl60,
             Artist: val.artistName,
+            SongTitle: val.trackName,
             Collection: val.collectionName,
             CollectionPrice: '$' + val.collectionPrice,
             Play: val.previewUrl,
